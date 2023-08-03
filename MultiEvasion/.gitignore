@@ -1,0 +1,48 @@
+## exlcude mac os file
+.DS_Store
+
+## exclude folder
+data/**
+result/**
+models/**
+/torchattacks/**
+/secml_malware/**
+/test/**
+/log/**
+/.idea/**
+**/checkpoint
+**/backup
+**/config
+**/android
+**/debug_script
+**/temp
+**/__pycache__
+
+## exclude file
+*.sh
+validate_*.py
+white_box_*.py
+train_secml_*.py
+train_malconv*.py
+
+## inlcude files and folders
+!/data/all_file/**
+!/data/test_data_label.csv
+!/data/train_data_label.csv
+!/data/val_data_label.csv
+train_fireeye.py
+trian_avastnet.py
+test_secml*.py
+test_model_copy.py
+test_adv_x.py
+test_adv_against*.py
+test.py
+mal_test.ipynb
+adv_attack_against_detectors_malconv_avast.py
+
+!*.sh
+
+
+##exclude temporarily, will release after paper published
+#/src/**
+#/attacks/**

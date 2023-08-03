@@ -1,0 +1,11 @@
+**
+**/
+!*.c
+!*.h
+!*.py
+!*.ipynb
+!Experiment2/
+!LICENSE
+!makefile
+!README.md
+!.gitignore
