@@ -1,7 +1,6 @@
 # Evil ELF 
 ## Created by Andrew Kosikowski and Daniel "Jun" Cho
-### PI: Dr. Boyang Wang
-### Co-PI: Dr. Anca Ralescu
+### Mentors: Dr. Boyang Wang and Dr. Anca Ralescu
 ---
 
 ## What is this?
