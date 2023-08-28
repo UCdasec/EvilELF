@@ -510,7 +510,7 @@ void find_gaps_in_elf_file(Elf_Manager* manager, int** gap_start_final, int** ga
     int* gap_size = malloc(num_gaps*sizeof(int));
 
 
-    if(current+size < manager->s_hdr[1].sh_offset){
+    if(current+size < manager->s_hdr[1].sh_offset && manager->s_hdr[1].sh_type != SHT_NULL){
         num_gaps++;
         gap_start = realloc(gap_start,num_gaps*sizeof(int));
         gap_size = realloc(gap_size,num_gaps*sizeof(int));
@@ -522,7 +522,7 @@ void find_gaps_in_elf_file(Elf_Manager* manager, int** gap_start_final, int** ga
     for(int i = 2; i < manager->e_hdr.e_shnum;i++){
         current = manager->s_hdr[i-1].sh_offset;
         size = manager->s_hdr[i-1].sh_size;
-        if(current+size < manager->s_hdr[i].sh_offset){
+        if(current+size < manager->s_hdr[i].sh_offset && manager->s_hdr[i-1].sh_type != SHT_NULL){
             num_gaps++;
             gap_start = realloc(gap_start,num_gaps*sizeof(int));
             gap_size = realloc(gap_size,num_gaps*sizeof(int));
@@ -533,7 +533,8 @@ void find_gaps_in_elf_file(Elf_Manager* manager, int** gap_start_final, int** ga
 
     current = manager->s_hdr[manager->e_hdr.e_shnum-1].sh_offset;
     size = manager->s_hdr[manager->e_hdr.e_shnum-1].sh_size;
-    if(current+size < manager->e_hdr.e_shoff){
+
+    if(current+size < manager->e_hdr.e_shoff && manager->s_hdr[manager->e_hdr.e_shnum-1].sh_type != SHT_NULL){
         num_gaps++;
         gap_start = realloc(gap_start,num_gaps*sizeof(int));
         gap_size = realloc(gap_size,num_gaps*sizeof(int));
