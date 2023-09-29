@@ -1,5 +1,5 @@
 # Evil ELF 
-## Created by Andrew Kosikowski and Daniel "Jun" Cho
+## Created by Andrew Kosikowski, Daniel "Jun" Cho and Mabon Ninan
 ### Mentors: Dr. Boyang Wang and Dr. Anca Ralescu
 ---
 
@@ -33,8 +33,10 @@ When reporting results that use the dataset or code in this repository, please c
 ---
 
 ## Contact
-Andrew Kosikowski andkosikowski@gmail.com https://www.andrewkosikowski.com
+Andrew Kosikowski andkosikowski@gmail.com <!-- https://www.andrewkosikowski.com -->
 
 Jun Cho junc13579@gmail.com
+
+Mabon Ninan ninanmm@mail.uc.edu
 
 Dr. Boyang Wang, boyang.wang@uc.edu
