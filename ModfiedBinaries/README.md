@@ -1,5 +1,5 @@
 
-# Warning: Malicious Files Detected
+# Warning: Malicious Files
 
 ## This folder contains files that have been flagged as potentially malicious or harmful to your computer and data. These files may pose a significant risk to the security and integrity of your system.
 
@@ -15,7 +15,7 @@ Snapshot and Restore: VMs allow you to take snapshots of the system before runni
 
 Testing and Analysis: You can safely analyze and test these files within a controlled environment. If they turn out to be safe, you can confidently transfer them to your main system.
 
-## #Limited Impact: Any damage caused by malicious files within a virtual machine is contained within that environment and does not affect your main computer.
+## Limited Impact: Any damage caused by malicious files within a virtual machine is contained within that environment and does not affect your main computer.
 
 To set up a virtual machine, you can use software like VirtualBox, VMware, or Hyper-V, depending on your operating system. Make sure to follow best practices for security when configuring and using virtual machines.
 
