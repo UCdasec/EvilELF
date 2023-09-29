@@ -19,9 +19,16 @@ The project is composed of three main groups: Analytics containing data, experim
 
 
 ---
-
+<!--
 ## Acknowledgements
 This code was created as part of the Research Experiences for Undergraduates (REU) in Hardware and Embedded Systems Security and Trust (RHEST), NSF award 2150086, during the summer of 2023 at the University of Cincinnati. The project's code was created by Andrew Kosikowski and Daniel "Jun" Cho during their undergraduates at Rose-Hulman Institute of Technology and Hamilton College respectively. The project was mentored by Dr. Boyang Wang and Dr. Anca Ralescu at the University of Cincinnati. 
+-->
+## Reference
+When reporting results that use the dataset or code in this repository, please cite the paper below:
+
+*Andrew Kosikowski, Daniel (Jun) Cho, Mabon Ninan, Anca Ralescu, Boyang Wang “EvilELF: Evasion Attacks on Deep-Learning Malware Detection over ELF Files,” 22nd IEEE International Conference on Machine Learning and Applications (IEEE ICMLA 2023), Jacksonville, FL, December 15-17, 2023.*
+
+**The dataset and code are for research purpose only**
 
 ---
 
